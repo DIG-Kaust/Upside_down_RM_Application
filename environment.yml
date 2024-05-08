@@ -1,0 +1,26 @@
+name: UD_RM
+channels:
+  - defaults
+  - conda-forge
+  - numba
+dependencies:
+  - python>=3.6.4
+  - pip
+  - numpy>=1.15.0
+  - scipy>=1.1.0
+  - pylops
+  - matplotlib
+  - ipython
+  - pytest
+  - Sphinx
+  - numpydoc
+  - numba
+  - icc_rt
+  - pip:
+    - pytest-runner
+    - setuptools_scm
+    - sphinx-rtd-theme
+    - pydata-sphinx-theme
+    - sphinx-gallery
+    - nbsphinx
+    - image
