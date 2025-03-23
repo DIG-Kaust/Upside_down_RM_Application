@@ -1,0 +1,33 @@
+[build-system]
+requires = [
+    "setuptools >= 65",
+    "setuptools_scm[toml]",
+    "wheel",
+]
+
+[project]
+name = "udrm"
+version = "0.1.0"
+authors = [
+    {name = "Ning Wang", email = "ning.wang.2@kaust.edu.sa"},
+    {name = "Matteo Ravasi", email = "matteoravasi@gmail.com"},
+]
+description = "Upside-down RM method for Volve data application"
+readme = "README.md"
+requires-python = ">=3.8"
+keywords = ["OBC", "imaging", "seismic"]
+license = {text = "BSD 3-Clause License"}
+classifiers = [
+        "Intended Audience :: Science/Research",
+        "Natural Language :: English",
+        "Programming Language :: Python :: 3.9",
+        "Topic :: Scientific/Engineering :: Mathematics",
+    ]
+dependencies = [
+        "numpy >= 1.15.0",
+        "pylops >= 2.0.0",
+    ]
+dynamic = ["version"]
+
+[tool.setuptools.packages]
+find = {}
